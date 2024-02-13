@@ -15,8 +15,8 @@ public static class MauiProgram
                 // The DSN is the only required option.
                 options.Dsn = "https://eb18e953812b41c3aeb042e666fd3b5c@o447951.ingest.sentry.io/5428537";
                 options.Debug = true;
-	        // Attach screenshots on errors
-	        options.AttachScreenshot = true;
+                // Attach screenshots on errors
+                options.AttachScreenshot = true;
             })
 			.ConfigureFonts(fonts =>
 			{
