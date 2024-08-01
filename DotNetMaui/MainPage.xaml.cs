@@ -1,17 +1,10 @@
-﻿using Microsoft.Extensions.Logging;
-
-
-namespace DotNetMaui;
+﻿namespace DotNetMaui;
 public partial class MainPage
 {
-    private readonly ILogger<MainPage> _logger;
-
     private int _count = 0;
 
-    // NOTE: You can only inject an ILogger<T>, not a plain ILogger
-    public MainPage(ILogger<MainPage> logger)
+    public MainPage()
     {
-        _logger = logger;
         InitializeComponent();
     }
 
@@ -41,8 +34,6 @@ public partial class MainPage
         }
 
         SemanticScreenReader.Announce(CounterBtn.Text);
-
-        _logger.LogInformation("The button has been clicked {ClickCount} times", _count);
     }
 
     private void OnUnhandledExceptionClicked(object sender, EventArgs e)
