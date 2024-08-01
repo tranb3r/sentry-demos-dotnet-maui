@@ -6,7 +6,7 @@
         {
             try
             {
-                throw new ApplicationException("This exception was thrown and captured manually, without crashing the app.");
+                throw new ApplicationException("This exception was thrown and captured manually in class library, without crashing the app.");
             }
             catch (Exception ex)
             {

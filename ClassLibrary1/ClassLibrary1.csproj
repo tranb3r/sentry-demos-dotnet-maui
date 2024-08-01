@@ -6,6 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$([MSBuild]::GetTargetPlatformIdentifier($(TargetFramework)))'=='Release|android'">
+		<EmbedAllSources>true</EmbedAllSources>
+	</PropertyGroup>
+	
 	<ItemGroup>
 		<PackageReference Include="Sentry.Maui" Version="4.9.0" />
 	</ItemGroup>
