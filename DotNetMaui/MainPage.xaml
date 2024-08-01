@@ -43,6 +43,13 @@
                 HorizontalOptions="Center" />
 
             <Button
+                x:Name="ThrowAndCaptureInClassLibraryBtn"
+                Text="Throw and Capture Exception in class library"
+                SemanticProperties.Hint="Throws an exception in class library and captures it."
+                Clicked="OnCapturedExceptionInClassLibraryClicked"
+                HorizontalOptions="Center" />
+				
+            <Button
                 x:Name="ThrowUnhandledBtn"
                 Text="Throw Unhandled .NET Exception (Crash)"
                 SemanticProperties.Hint="Throws an unhandled .NET exception, crashing the app."

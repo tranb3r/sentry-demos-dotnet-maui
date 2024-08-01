@@ -1,4 +1,6 @@
-﻿namespace DotNetMaui;
+﻿using ClassLibrary1;
+
+namespace DotNetMaui;
 public partial class MainPage
 {
     private int _count = 0;
@@ -61,6 +63,12 @@ public partial class MainPage
             SentrySdk.CaptureException(ex);
         }
     }
+
+    private void OnCapturedExceptionInClassLibraryClicked(object sender, EventArgs e)
+    {
+        new Class1().ThrowAndCaptureException();
+    }
+
     private void OnJavaCrashClicked(object sender, EventArgs e)
     {
 #if ANDROID

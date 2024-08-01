@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetMaui", "DotNetMaui\DotNetMaui.csproj", "{FA392E36-F8D1-4B5F-B120-7447918B56E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{9DB4B70B-E3FF-40B9-A00F-B4329D348509}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{FA392E36-F8D1-4B5F-B120-7447918B56E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA392E36-F8D1-4B5F-B120-7447918B56E8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA392E36-F8D1-4B5F-B120-7447918B56E8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9DB4B70B-E3FF-40B9-A00F-B4329D348509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB4B70B-E3FF-40B9-A00F-B4329D348509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB4B70B-E3FF-40B9-A00F-B4329D348509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB4B70B-E3FF-40B9-A00F-B4329D348509}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
