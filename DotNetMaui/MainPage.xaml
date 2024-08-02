@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DotNetMaui.MainPage">
+             x:Class="DotNetMaui.MainPage"
+			 xmlns:viewModels="clr-namespace:ClassLibrary1;assembly=ClassLibrary1"
+			 x:DataType="viewModels:ViewModel">
 
     <ScrollView>
         <VerticalStackLayout
@@ -47,6 +49,13 @@
                 Text="Throw and Capture Exception in class library"
                 SemanticProperties.Hint="Throws an exception in class library and captures it."
                 Clicked="OnCapturedExceptionInClassLibraryClicked"
+                HorizontalOptions="Center" />
+				
+			<Button
+                x:Name="ThrowUnhandledInNugetsBtn"
+                Text="Throw Unhandled Exception (Crash) Nuget"
+                SemanticProperties.Hint="Throws an unhandled .NET exception, with nugets, crashing the app."
+				Command="{Binding ThrowExceptionWithNugetsCommand}"
                 HorizontalOptions="Center" />
 				
             <Button

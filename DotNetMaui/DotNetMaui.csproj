@@ -57,8 +57,11 @@
 	</ItemGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$([MSBuild]::GetTargetPlatformIdentifier($(TargetFramework)))'=='Release|android'">
-		<EmbedAllSources>true</EmbedAllSources>
-		<TrimMode>full</TrimMode>
+		<!-- <EmbedAllSources>true</EmbedAllSources> -->
+        <EnableSourceLink>false</EnableSourceLink>
+        <PublishRepositoryUrl>false</PublishRepositoryUrl>
+		
+		<!-- <TrimMode>full</TrimMode> -->
 	</PropertyGroup>
 
 	<ItemGroup>

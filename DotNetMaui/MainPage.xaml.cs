@@ -5,9 +5,11 @@ public partial class MainPage
 {
     private int _count = 0;
 
-    public MainPage()
+    public MainPage(IServiceProvider serviceProvider)
     {
         InitializeComponent();
+
+        BindingContext = new ViewModel(serviceProvider);
     }
 
     protected override void OnAppearing()
@@ -66,7 +68,7 @@ public partial class MainPage
 
     private void OnCapturedExceptionInClassLibraryClicked(object sender, EventArgs e)
     {
-        new Class1().ThrowAndCaptureException();
+        new TestClass().ThrowAndCaptureException();
     }
 
     private void OnJavaCrashClicked(object sender, EventArgs e)

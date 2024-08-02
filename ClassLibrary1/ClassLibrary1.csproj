@@ -6,11 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$([MSBuild]::GetTargetPlatformIdentifier($(TargetFramework)))'=='Release|android'">
-		<EmbedAllSources>true</EmbedAllSources>
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<!-- <EmbedAllSources>true</EmbedAllSources> -->
+        <EnableSourceLink>false</EnableSourceLink>
+        <PublishRepositoryUrl>false</PublishRepositoryUrl>		
 	</PropertyGroup>
 	
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="Flurl.Http" Version="4.0.2" />
+		<PackageReference Include="SecureHttpClient" Version="2.2.6" />
 		<PackageReference Include="Sentry.Maui" Version="4.9.0" />
 	</ItemGroup>
 

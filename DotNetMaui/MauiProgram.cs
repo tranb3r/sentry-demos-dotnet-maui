@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using ClassLibrary1;
 
 namespace DotNetMaui;
 
@@ -23,6 +24,8 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+
+        builder.Services.ConfigureLibrary();
 
 #if DEBUG
 		builder.Logging.AddDebug();
